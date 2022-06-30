@@ -1,9 +1,10 @@
 #include <stdio.h>
+
 /**
-*Main-Entry Point
-*Description: 'C programming'
-*Return: Always 0 (success)
-*/
+ * main - Entry Point
+ * Return: Always 0 (success)
+ *
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
