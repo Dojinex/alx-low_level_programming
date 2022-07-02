@@ -7,22 +7,23 @@
  */
 int main(void)
 {
-int num1;
-int num;
-for (num = 48; num <= 57 ; num++)
+int digit1, digit2;
+for (digit1 = 48; digit1 <= 57; digit1++)
 {
-for (num1 = num + 1 ; num1 <= 57 ; num1++)
+for (digit2 = 49; digit2 <= 57; digit2++)
 {
-putchar (num);
-putchar (num1);
-for (num == 56 && num1 == 57)
+if (digit2 > digit1)
 {
-putchar ('\n');
-break;
-}
-putchar (',');
-putchar (' ');
+putchar(digit1);
+putchar(digit2);
+if (digit1 != 56 || digit2 != 57)
+{
+putchar(44);
+putchar(32);
 }
 }
+}
+}
+putchar(10);
 return (0);
 }
