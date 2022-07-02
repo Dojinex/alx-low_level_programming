@@ -7,25 +7,22 @@
  */
 int main(void)
 {
-int i;
-int j;
-for (i = 0; i <= 99 ; i++)
+int ch;
+int n;
+for (ch = 48; ch <= 57 ; ch++)
 {
-for (j = 0 ; j <= 99 ; j++)
+for (n = 0 ; n <= 57 ; n++)
 {
-if (j > i)
+putchar (ch);
+putchar (n);
+
+if (ch != 57 || n != 57)
 {
-putchar (i / 10 + '0');
-putchar (i % 10 + '0');
-putchar (32);
-putchar (j / 10 + '0');
-putchar (j % 10 + '0');
-if (i != 98)
-putchar(',');
-putchar(' ');
+putchar(44);
+putchar(32);
 }
 }
 }
-putchar ('\n');
+putchar (10);
 return (0);
 }
