@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - prints all possible combinations of two two-digit numbers.
  *
  * Return: Always 0
  */
@@ -9,17 +9,22 @@ int main(void)
 {
 int ch;
 int n;
-for (ch = 48; ch <= 57 ; ch++)
+for (ch = 0; n <= 90 ; n++)
 {
-for (n = 0 ; n <= 57 ; n++)
+for (ch = n ; ch <= 99 ; ch++)
 {
-putchar (ch);
-putchar (n);
-
-if (ch != 57 || n != 57)
+if (ch != n)
 {
-putchar(44);
-putchar(32);
+putchar (n / 10 + 48);
+putchar (n % 10 + 48);
+putchr(' ')
+putchr(ch / 10 + 48)
+putchr(ch % 10 + 48)
+if (n * 100 + ch != 9899)
+{
+putchar(',');
+putchar(' ');
+}
 }
 }
 }
