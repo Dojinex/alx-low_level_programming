@@ -1,27 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of two two-digit numbers.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
-int digit1, digit2;
-for (digit1 = 48; digit1 <= 57; digit1++)
+int i;
+int j;
+for (i = 0; i <= 99 ; i++)
 {
-for (digit2 = 48; digit2 <= 57; digit2++)
+for (j = 0 ; j <= 99 ; j++)
 {
-putchar((digit1);
-putchar((digit2);
-if (digit1 != 57 || digit2 != 57)
+if (j > i)
 {
-putchar(44);
-putchar(32);
+putchar (i / 10 + '0');
+putchar (i % 10 + '0');
+putchar (32);
+putchar (j / 10 + '0');
+putchar (j % 10 + '0');
+if (i != 98)
+putchar(',');
+putchar(' ');
 }
 }
 }
-}
-putchar(10);
+putchar ('\n');
 return (0);
 }
