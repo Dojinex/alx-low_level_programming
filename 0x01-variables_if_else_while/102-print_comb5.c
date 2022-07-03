@@ -7,27 +7,23 @@
  */
 int main(void)
 {
-int ch;
-int n;
-for (ch = 0; n <= 99 ; n++)
+int num1;
+int num2;
+for (num1 = 0; num1 <= 98 ; num1++)
 {
-for (ch = n ; ch <= 99 ; ch++)
+for (num2 = num1 + 1; num2 <= 99; num2++)
 {
-if (ch != n)
-{
-putchar(n / 10 + 48);
-putchar(n % 10 + 48);
+putchar((num1 / 10) + '0');
+putchar((num1 % 10) + '0');
 putchar(' ')
-putchar(ch / 10 + 48)
-putchar(ch % 10 + 48)
-if (n * 100 + ch != 9899)
-{
+putchar((num2 / 10) + '0');
+putchar((num2 % 10) + '0');
+if (num1 == 98 && num2 == 99)
+continue;
 putchar(',');
 putchar(' ');
 }
 }
-}
-}
-putchar (10);
+putchar('\n');
 return (0);
 }
