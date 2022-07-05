@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - Prints the last digit of a number.
- * @n: The passed args
+ * @n:The passed args
  * Return: Value of the last digit.
  */
 int print_last_digit(int n)
