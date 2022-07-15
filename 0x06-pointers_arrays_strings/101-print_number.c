@@ -1,32 +1,32 @@
 #include "main.h"
 
 /**
- * print_number - function prints an integer
- * @n: integer
+ * print_number - prints an integer.
+ * n: input integer.
  *
- * Return: nothing
+ * Return: no return.
  */
-
-void print_number(int n)
+void print_number(int n);
 {
-int y = 1000000000;
-int x, z;
-for (x = 0; x < 10; x++)
+unsigned int m, d, count;
+if (n < 0)
 {
-if ((n / y) == 0 && z == 0)
-{
-y = (y / 10);
-continue;
-}
-else if (z == 0)
-{
-_putchar((n / y)+'0');
-z++;
+_putchar(45);
+m = n * -1;
 }
 else
 {
-_putchar ((n / y) % 10 + '0')
+m = n;
 }
-y = (y / 10);
+d = m;
+count = 1;
+while (d > 9)
+{
+d /= 10;
+count *= 10;
+}
+for (; count >= 1; count /= 10)
+{
+_putchar(((m / count) % 10) + 48);
 }
 }
