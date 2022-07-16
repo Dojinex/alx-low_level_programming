@@ -7,7 +7,6 @@
  * Return: no return.
  *
  */
-i
 void print_number(int n)
 {
 unsigned int num = n;
