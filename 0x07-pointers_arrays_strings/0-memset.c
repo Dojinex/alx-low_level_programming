@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * _memset - this memory set function
- * @s: string
- * @b: a character
- * @n: an integer
+ * _memset - Entry point
+ * @s: pointed destination
+ * @b: constant byte
+ * @n: byte
  *
- * Return: a string
+ * Return: Always 0 (Success)
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int a;
-for (a = 0; a < n; a++)
-s[a] = b;
-
+unsigned int i;
+for (i = 0; i < n; i++)
+s[i] = b;
 return (s);
 }
