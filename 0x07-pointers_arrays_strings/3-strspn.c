@@ -7,17 +7,23 @@
  *
  * Return: unsigned int
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
-int i = 0;
-int j = 0;
-for (; s[i]; i++)
+unsigned int i, n, value, check;
+value = 0;
+for (i = 0; s[i] != '\0'; i++)
 {
-for (j = 0; accept[j]; j++)
+check = 0;
+for (n = 0; accept[n] != '\0'; n++)
 {
-if (s[i] == accept[j])
+if (accept[n] == s[i])
 {
-break;
+value++;
+check = 1;
 }
+}
+if (check == 0)
+return (value);
+}
+return (value);
 }
