@@ -1,19 +1,16 @@
 #include <stdio.h>
 
 /**
- * main -  print name
- * @argc: int.
- * @argv: char.
+ * main -  writes its name
+ * @argc: arguement count
+ * @argv: array of pointers to arguement strings
  *
- * Return: Always 0.
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-int i;
-for (i = 0; i < argc ; i++)
-
-printf("%s\n", argv[i]);
-}
+argc = argc;
+printf("%s\n", *argv);
 return (0);
 }
