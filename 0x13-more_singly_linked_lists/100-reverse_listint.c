@@ -20,6 +20,6 @@ n = (*head)->next;
 p = *head;
 *head = n;
 }
-*head = p
+*head = p;
 return (*head);
 }
