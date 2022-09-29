@@ -19,6 +19,7 @@ unsigned int cont = 0;
 /* border case for empty list */
 if (!(*head))
 return (-1);
+
 /* border case for delete at the beginning */
 if (index == 0)
 {
